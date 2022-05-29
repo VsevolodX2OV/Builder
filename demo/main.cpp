@@ -1,5 +1,7 @@
 // Copyright by Enigma
+#include "iostream"
 
 int main() {
-  example();
+  std::cout << "Hello world" << std::endl;
+
 }

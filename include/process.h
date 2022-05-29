@@ -1,5 +1,6 @@
 //Copyright by Enigma
 
+#include <boost/process/child.hpp>
 #include <builder.hpp>
 #include <string>
 #include <utility>
