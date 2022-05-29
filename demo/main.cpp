@@ -1,4 +1,4 @@
-#include <example.hpp>
+// Copyright by Enigma
 
 int main() {
   example();

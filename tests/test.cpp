@@ -1,4 +1,4 @@
-// Copyright 2021 Your Name <your_email>
+// Copyright by Enigma
 
 #include <stdexcept>
 #include <thread>
