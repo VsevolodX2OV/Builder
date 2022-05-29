@@ -4,7 +4,9 @@
 #define INCLUDE_BUILDER_HPP_
 
 #include <async++.h>
+#include <process.h>
 #include <pthread.h>
+
 #include <boost/log/core.hpp>
 #include <boost/log/trivial.hpp>
 #include <boost/log/utility/setup/common_attributes.hpp>
@@ -15,9 +17,9 @@
 #include <future>
 #include <iostream>
 #include <string>
+#include <timer.hm>
 
-#include <process.hpp>
-#include <timer.hpp>
+#include "process.h"
 
 namespace logging = boost::log::trivial;
 

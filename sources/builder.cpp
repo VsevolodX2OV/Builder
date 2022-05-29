@@ -21,8 +21,10 @@ void Builder::create_program_options(
 
                       ("pack,p", "Pack step")
 
-                          ("timeout,t", boost::program_options::value<int>()
-                                            ->default_value(0), "Set waiting time");
+                          ("timeout,t",
+                           boost::program_options::value<int>()
+                              ->default_value(0),
+                           "Set waiting time");
   store(parse_command_line(argc, argv, desc), vmap);
   notify(vmap);
 }
@@ -161,7 +163,8 @@ void Builder::settings_process(const boost::program_options::variables_map&
   }
   if (vmap.count("timeout")) {
     BOOST_LOG_TRIVIAL(debug)
-        << "Timeout args got: " << vmap["timeout"].as<int>() << ". Setting timer";
+        << "Timeout args got: " << vmap["timeout"].as<int>()
+            << ". Setting timer";
     time = vmap["timeout"].as<int>();
   }
   p_process = new Process(config, install, pack, time);
